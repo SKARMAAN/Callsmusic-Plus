@@ -20,21 +20,21 @@ DURATION_LIMIT = int(getenv("DURATION_LIMIT", "7"))
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 
 # Your Telegram User ID
-BOT_OWNER = int(os.environ.get("BOT_OWNER"))
+BOT_OWNER = int(os.environ.get("BOT_OWNER", "5332414680"))
 # Sudo users IDs, They are admins everywhere
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 # Your Bot's Username without "@"
-BOT_USERNAME = os.environ.get("BOT_USERNAME")
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "Zaid_Musics_Bot")
 # Your MongoDB url
-DATABASE_URL = os.environ.get("DATABASE_URL")
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://SKARMAAN:jAXllZggCqEN3eLe@cluster0.vlcmrpo.mongodb.net/?retryWrites=true&w=majority")
 # Your Log Channel! Make a private channel and get it's ID
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001999755155"))
 # If you need to broadcast messages as a copy or Forwarded Message
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 # Thumbnail URL
-THUMB_URL = os.environ.get("THUMB_URL", "https://telegra.ph/file/2ed47c81eda6b0624021d.jpg")
+THUMB_URL = os.environ.get("THUMB_URL", "https://telegra.ph/file/77d94f66f1aa463271275.jpg")
 # Your Updates Channel! Don't Put Anything If you don't have one
-UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "NexaBotsUpdates")
+UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "WOFBotsUpdates")
 
 # Your ARQ API Key
 ARQ_API_KEY = getenv("ARQ_API_KEY")
